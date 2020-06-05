@@ -1,0 +1,19 @@
+ENTIDADES
+
+  berbeiro 
+  barbearia
+  cliente
+  agendamento
+
+
+  FUNCIONALIDADES
+    login
+    cadastrar barbearia
+    log out
+    cadastrar novos barbeiros
+    listar barbeiros 
+    listar agendamentos 
+
+    listar todas as barbearias 
+    agendar horário 
+    
