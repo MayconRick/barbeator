@@ -42,6 +42,28 @@ module.exports = {
 
         return response.json({id});
 
+    },
+
+    async edit(request, response) {
+
+        const id = request.params.id;
+
+        const {
+            name, 
+            email, 
+            phone_number
+        } = request.body;
+
+       await connection("barbershops")
+        .update({
+            name, 
+            email, 
+            phone_number
+        })
+        .where({id})
+        .then(u => response.status(!!u?200:404).json({success:!!u}))
+        .catch(e => response.status(500).json(e));
+
     }
 
 };
