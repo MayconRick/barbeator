@@ -1,4 +1,4 @@
-��# barbeator
+# barbeator
 ## Installation
 
 ```bash
